@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 
 import connectDB from "./db/index.js";
+import { app } from "./App.js";
 
 dotenv.config({
     path: './env'
@@ -18,6 +19,7 @@ connectDB()
     console.log("MongoDB connection failed !!!" , err);
     
 })
+export {app};
 
 // import express from "express";
 // const app=express();
